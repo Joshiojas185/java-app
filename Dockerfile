@@ -25,7 +25,8 @@
 
 # Use a base image that includes both Maven and OpenJDK 17.
 # This solves the "mvn: not found" error you were seeing.
-FROM maven:3.9.6-openjdk-17-slim
+# FROM maven:3.9.6-openjdk-17-slim
+FROM maven:3.9.6-eclipse-temurin-17
 
 # Set the working directory inside the container.
 WORKDIR /app
