@@ -1,5 +1,6 @@
 package com.example.javabackend;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import java.nio.charset.StandardCharsets;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class JavaCodeController {
 
     @PostMapping("/run-java")
